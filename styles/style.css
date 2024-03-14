@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Computerfont";
+    src: url("fonts/TTF/computerfont.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg {
+    width: 110%;
+    height: 110%;
+    background: url("/images/background.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.timer {
+    color: white;
+    font-family: "Computerfont";
+    font-size: 1500%;
+
+}
+
+.set-time {
+    display: flex;
+    flex-direction: column;
+}
+.set-time-btn {
+    color: white;
+    font-family: "Computerfont";
+    font-size: 200%;
+    margin-bottom: 100px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.set-time-input-secs, .set-time-input-mins {
+    background: transparent;
+    border: none;
+    font-family: "Computerfont";
+    font-size: 150%;
+    margin-bottom: 25px;
+    background-color: #2f2f2f;
+    color: white;
+    width: 75px;
+    text-align: center;
+}
+
+.set-time-inputs {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.set-time-input-mins-div, .set-time-input-secs-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.set-time-input-mins-text, .set-time-input-secs-text {
+    color: white;
+    font-family: "Computerfont";
+}
+
+.num-error {
+    color: white;
+    font-family: Computerfont;
+    margin-bottom: 50px;
+    font-size: 300%;
+    display: none;
+}
